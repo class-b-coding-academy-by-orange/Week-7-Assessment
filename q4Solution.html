@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">	</script>
+	<title>Q4</title>
+	<style>
+		#no {
+			background-color: red
+		}
+
+		#yes {
+			background-color: green
+		}
+	</style>
+</head>
+
+<body>
+	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
+	<div class="main">Main div is here </div>
+	<button id="no" onClick="red()"> Red</button>
+	<button id="yes" onClick="green()"> Green</button>
+	<script>
+		$(document).ready(function () {
+			$('#no').on('click', function () {
+				$('.main').css('color', 'red');
+			})
+			$('#yes').on('click', function () {
+				$('.main').css('color', 'green');
+			})
+		})
+	</script>
+</body>
+
+</html>
